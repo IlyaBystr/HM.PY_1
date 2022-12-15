@@ -31,15 +31,27 @@
 
 #4.Напишите программу, которая по заданному номеру четверти, показывает диапазон возможных координат точек в этой четверти (x и y).
 
-print("Введите номер четверь")
-x=int(input())
-if x==1:
-    print("x(0:+ifinity) y(0:+infinity)")
-elif x==2:
-    print("x(0:-ifinity) y(0:+ifinity)")
-elif x==3:
-    print("x(0:-ifinity) y(0:-ifinity)")
-elif x==4:
-    print("x(0:+ifinity) y(0:-ifinity)")
-else:
-    print("Вы ввлем неправильное число") 
+# print("Введите номер четверь")
+# x=int(input())
+# if x==1:
+#     print("x(0:+ifinity) y(0:+infinity)")
+# elif x==2:
+#     print("x(0:-ifinity) y(0:+ifinity)")
+# elif x==3:
+#     print("x(0:-ifinity) y(0:-ifinity)")
+# elif x==4:
+#     print("x(0:+ifinity) y(0:-ifinity)")
+# else:
+#     print("Вы ввлем неправильное число") 
+
+#5.Напишите программу, которая принимает на вход координаты двух точек и находит расстояние между ними в 2D пространстве.
+
+print("Введите х1 и у1")
+x1=float(input())
+y1=float(input())
+print("Введите x2 и y2")
+x2=float(input())
+y2=float(input())
+
+S=((abs(x2-x1)**2)+(abs(y2-y1)**2))**0.5
+print(round(S, 2))
